@@ -1,0 +1,146 @@
+body{overflow-x:hidden;}
+#header{position:relative;z-index:500!important;}
+
+#userInf{position:absolute;top:0px;right:0px;z-index:600;height:56px;width:200px;color:white;display:flex;justify-content:center;align-items:center;}
+#userName{margin-right:10px;font-size:20px;}
+#exitUser{cursor:pointer;display:block;color:white;font-size:16px;font-weight:600;text-decoration:none;}
+#exitUser:hover{transition:1s ease;font-size:18px;}
+
+#regForm>button{border:none;margin: 0;font-family: inherit;font-size: inherit;line-height: inherit;background:none;color:rgb(117,117,117);}
+#regForm>input,#regForm>button{font-size:18px;font-weight:600;outline: 0px dashed rgba(53,135,225,08);border:none;border-bottom:1px solid black;}
+#regForm>input:hover::placeholder,#regForm>button:hover::placeholder{transition:1s ease;color:black;}
+#regForm>button:hover{transition:1s ease;color:black;}
+#changePass{width:20px;height:20px;box-sizing:border-box;position:relative;right:35px;margin-right:-40px;}
+#changePass>img{width:40px;height:20px;box-sizing:border-box;cursor:pointer;}
+
+#signError{display:none;font-size:18px;}
+#signErrorMark{color:red;margin-right:10px;}
+
+
+#newproduct{display:flex;justify-content:center;align-items:center;flex-direction: column;display:none;}
+
+#newproduct>input,#newproduct>button,#newproduct>label{text-align:center;margin-bottom:10px;width:250px;height:30px;box-sizing:border-box;font-size:20px;border:none;
+background:none;outline:none;}
+#newproduct>input:hover::placeholder{transition:1s ease;color:black;}
+#newproduct>input:hover,#newproduct>button:hover,#newproduct>label:hover{transition:1s ease;border-bottom:2px solid black;}
+#newproduct>label{cursor:pointer;}
+
+#loadfile,#ImgChange{display:none;}
+#preImage,#preImaChange{display:none;width:250px;display:block;border-radius:20px;}
+
+#addFirstG{font-size:19px;font-weight:600;cursor:pointer;box-sizing:border-box;width:400px;text-align:center;cursor:pointer;}
+#addFirstG:hover{transition:1s ease;border-bottom:2px solid black;}
+
+.Oneproduct{display:flex;justify-content:center;align-items:center;margin-bottom:10px;}
+#Oneproduct>div{margin-right:10px;}
+.productOneimageImg{width:30px;display:block;}
+.productOnename{width:200px;height:40px;box-sizing:border-box;font-size:18px;font-weight:600;text-align:center;}
+.productOneSKU{width:100px;height:40px;box-sizing:border-box;font-size:18px;font-weight:600;text-align:center;}
+.productOnetype{width:100px;height:40px;box-sizing:border-box;font-size:18px;font-weight:600;text-align:center;}
+.productOnecount{width:100px;height:40px;box-sizing:border-box;font-size:18px;font-weight:600;text-align:center;}
+
+#GoddsHeaders{display:flex;justify-content:center;align-items:center;margin-bottom:10px;}
+#imgL,#visimgL{width:30px;}
+#imgL>img{width:30px;height:30px;}
+#namel,#visnamel{width:200px;}
+#SKUL,#visSKUL{width:100px;}
+#Typel,#visTypel{width:100px;}
+#countl,#viscountl{width:100px;}
+.topH{box-sizing:border-box;font-size:20px;font-weight:600;text-align:center;border-bottom:1px solid black;height:30px;}
+
+#choseColumns{display:flex;justify-content:center;align-items:center;margin-bottom:10px;}
+#choseColumns>div{display:flex;justify-content:center;align-items:center;}
+#choseColumns>div>input{width:20px;height:20px;display:block;}
+
+
+#addNewproductButton,#ChangeNewproduct{display:flex;justify-content:center;align-items:center;font-size:18px;font-weight:600;cursor:pointer;width:250px;margin:auto;}
+#addNewproductButton:hover{transition:1s ease;border-bottom:1px solid black;font-size:20px;}
+#addNewproductButton{margin-top:60px;}
+
+
+#allproducts{position:relative;width:630px;margin:auto;}
+#settings{width:40px;height:40px;position:absolute;right:20px;top:-40px;cursor:pointer;transition:1s ease;border-radius:100%;overflow:hidden;}
+#settings:hover{transition:1s ease;transform:rotate(90deg);}
+#settings>img{width:40px;height:40px;direction:block;}
+
+#ChoseCount{width:220px;position:absolute;right:-230px;top:-35px;cursor:pointer;transition:1s ease;display:none;}
+#ChoseCount>input{width:120px;outline:none;border:none;border-bottom:1px solid black;}
+#ChoseCount>button{background:none;border:none;border-bottom:1px solid black;}
+
+#SoSettings{width:220px;position:absolute;right:-230px;top:30px;cursor:pointer;transition:1s ease;display:none;}
+
+
+#search{width:40px;height:40px;position:absolute;right:20px;top:0px;cursor:pointer;transition:1s ease;border-radius:100%;overflow:hidden;}
+#search>img{width:30px;height:40px;direction:block;position:relative;left:10px;}
+
+.point{width:50px;display:flex;justify-content:center;align-items:center;}
+
+#delCheck{width:50px;height:30px;border-bottom:1px solid black;display:flex;justify-content:center;align-items:center;}
+#delCheck>img{width:30px;height:30px;display:block;}
+.point{display:none;}
+#delCheck{display:none;cursor:pointer;}
+
+.changeproduct{width:30px;height:30px;display:none;}
+.changeproduct>img{width:30px;height:30px;}
+
+@keyframes wrench{
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(20deg);}
+	100%{transform:rotate(0deg);}
+}
+
+.changeproduct:hover{animation:1s wrench;cursor:pointer;}
+
+#updateG{width:700px;position:absolute;right:calc(50% - 350px);background:rgb(101,101,101);z-index:900;
+display:flex;justify-content:center;align-items:center;flex-direction:column;border-radius:20px;box-shadow:10px 15px 5px rgba(142,142,142,0.7);
+display:none;}
+
+#updateG>input,#updateG>button,#updateG>label{text-align:center;margin-bottom:10px;width:250px;height:30px;box-sizing:border-box;font-size:20px;border:none;
+background:none;outline:none;color:white;}
+#updateG>input::placeholder,#updateG>button::placeholder,#updateG>label::placeholder{color:rgb(213,213,213);}
+#updateG>input:hover::placeholder{transition:1s ease;color:white;}
+#updateG>input:hover,#updateG>button:hover,#updateG>label:hover{transition:1s ease;border-bottom:2px solid white;}
+#updateG>label{cursor:pointer;}
+
+#closeupdateG,#closeupdateGFind,#movelock,#movelockUpdate{width:40px;height:40px;position:absolute;right:0px;top:0px;cursor:pointer;transition:1s ease;}
+#closeupdateG>img,#closeupdateGFind>img{width:40px;height:40px;display:block;}
+#movelock{position:absolute;right:40px;top:0px;display:flex;justify-content:center;align-items:center;}
+#movelock>img{width:30px;height:30px;}
+#movelockUpdate{position:absolute;right:40px;top:0px;display:flex;justify-content:center;align-items:center;}
+#movelockUpdate>img{width:30px;height:30px;}
+
+#closeupdateG:hover,#closeupdateGFind:hover{transition:1s ease;transform:rotate(90deg);}
+
+#choseColumns{display:none;position:relative;}
+
+#searchForm{width:750px;min-height:50px;background:rgb(101,101,101);z-index:800;position:absolute;right:calc(50% - 375px);
+display:none;justify-content:center;align-items:center;border-radius:20px;
+box-shadow:10px 15px 5px rgba(142,142,142,0.7);flex-direction:column;}
+
+#searchF>input{width:200px;margin-left:20px;border:none;border-bottom:1px solid rgb(213,213,213);background:none;color:white;outline:none;}
+#searchF>input::placeholder{color:rgb(213,213,213);}
+#searchF>input:hover::placeholder{transition:1s ease;color:white;}
+#searchF>input:hover{transition:1s ease;border-bottom:1px solid white;}
+#searchF>button{width:100px;background:none;border:none;border-bottom:1px solid rgb(213,213,213);color:rgb(213,213,213);}
+#searchF>button:hover{transition:1s ease;color:white;border-bottom:1px solid white;}
+
+#finded>.Oneproduct>div{color:white;}
+
+#delFind{width:150px;height:25px;float:left;display:none;background:none;color:white;border:none;outline:none;border-bottom:1px solid white;
+font-size:18px;font-weight:600;}
+
+#pages{display:flex;justify-content:center;align-items:center;}
+#PrevPage>a,#NextPage>a{font-size:18px;font-weight:600;text-decoration:none;cursor:pointer;color:black;display:block;}
+#PrevPage>a:hover,#NextPage>a:hover{transition:1s ease;color:rgb(52,129,205);}
+#PrevPage>span,#NextPage>span{font-size:18px;font-weight:600;color:rgb(83,104,114);}
+.pageButton,.CurrentPage{font-size:18px;font-weight:600;text-decoration:none;cursor:pointer;color:black;display:block;margin:0px 5px 0px 5px;}
+.CurrentPage{color:rgb(83,104,114);}
+#pagesButtons{display:flex;justify-content:center;align-items:center;}
+
+#InputPage{width:100px;position:absolute;right:calc(50% - 50px);height:20px;text-align:center;outline:none;}
+#InputPageSun{width:100px;position:absolute;right:calc(50% - 50px);min-height:25px;text-align:center;outline:none;margin-top:25px;color:black;
+text-decoration:none;border-bottom:1px solid black;font-size:18px;font-weight:600;display:block;}
+#InputPageSun:hover{transition: 1s ease;font-size:20px;}
+
+#addError,#UpdateError{display:none;font-size:18px;font-weight:600;color:rgb(234,83,49);}
+

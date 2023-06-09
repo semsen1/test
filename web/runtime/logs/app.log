@@ -1,0 +1,83 @@
+2023-06-08 17:54:31 [212.220.229.225][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /var/www/u1675555/data/www/semwdemo.ru/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/u1675555/data/www/semwdemo.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#1 /var/www/u1675555/data/www/semwdemo.ru/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/u1675555/data/www/semwdemo.ru/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/u1675555/data/www/semwdemo.ru/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/u1675555/data/www/semwdemo.ru/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/u1675555/data/www/semwdemo.ru/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2023-06-08 17:54:31 [212.220.229.225][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '37fb32e0835f9f27de379f93552abf90'
+    '_csrf' => '0cb172204104c6f71bdac9611c3af0b02ba9503e5269d6eb7bf0fa2ff6da171da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C4xyPp4HZ605on_xmdKFOCZX5lwsKg1e\";}'
+    'user' => 'semsen'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/'
+    'REMOTE_PORT' => '55588'
+    'SCRIPT_FILENAME' => '/var/www/u1675555/data/www/semwdemo.ru/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@server204.hosting.reg.ru'
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/u1675555/data/www/semwdemo.ru'
+    'CONTEXT_PREFIX' => ''
+    'DOCUMENT_ROOT' => '/var/www/u1675555/data/www/semwdemo.ru'
+    'REMOTE_ADDR' => '212.220.229.225'
+    'SERVER_PORT' => '443'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'semwdemo.ru'
+    'SERVER_SOFTWARE' => 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_fcgid/2.3.9 Phusion_Passenger/5.3.7'
+    'SERVER_SIGNATURE' => ''
+    'HTTP_COOKIE' => 'PHPSESSID=37fb32e0835f9f27de379f93552abf90; _csrf=0cb172204104c6f71bdac9611c3af0b02ba9503e5269d6eb7bf0fa2ff6da171da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C4xyPp4HZ605on_xmdKFOCZX5lwsKg1e%22%3B%7D; user=semsen'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"112\", \"Not_A Brand\";v=\"24\", \"Opera GX\";v=\"98\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_HOST' => 'semwdemo.ru'
+    'PERL5LIB' => '/usr/share/awstats/lib:/usr/share/awstats/plugins'
+    'REQUEST_SCHEME' => 'https'
+    'HTTPS' => 'on'
+    'UNIQUE_ID' => 'ZIHrpytYJqDnDjtbTbhNkAAAABU'
+    'REDIRECT_STATUS' => '200'
+    'REDIRECT_PERL5LIB' => '/usr/share/awstats/lib:/usr/share/awstats/plugins'
+    'REDIRECT_REQUEST_SCHEME' => 'https'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_UNIQUE_ID' => 'ZIHrpytYJqDnDjtbTbhNkAAAABU'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1686236071.5973
+    'REQUEST_TIME' => 1686236071
+    'argv' => []
+    'argc' => 0
+]
